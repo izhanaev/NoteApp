@@ -11,6 +11,10 @@
 		9C38407B2C592B5200375828 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38407A2C592B5200375828 /* ContentView.swift */; };
 		9C38407D2C592B5300375828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C38407C2C592B5300375828 /* Assets.xcassets */; };
 		9C3840802C592B5300375828 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C38407F2C592B5300375828 /* Preview Assets.xcassets */; };
+		9C38408B2C592CF100375828 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38408A2C592CF100375828 /* Note.swift */; };
+		9C38408D2C592D1E00375828 /* NotesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38408C2C592D1E00375828 /* NotesDataManager.swift */; };
+		9C38408F2C592D5A00375828 /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38408E2C592D5A00375828 /* NotesViewModel.swift */; };
+		9C3840912C592DA700375828 /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3840902C592DA700375828 /* NoteDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		9C38407A2C592B5200375828 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9C38407C2C592B5300375828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C38407F2C592B5300375828 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9C38408A2C592CF100375828 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		9C38408C2C592D1E00375828 /* NotesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDataManager.swift; sourceTree = "<group>"; };
+		9C38408E2C592D5A00375828 /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		9C3840902C592DA700375828 /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				9C3840782C592B5200375828 /* NoteAppApp.swift */,
-				9C38407A2C592B5200375828 /* ContentView.swift */,
+				9C3840892C592C7200375828 /* Services */,
+				9C3840882C592BD800375828 /* ViewModels */,
+				9C3840872C592BCC00375828 /* Views */,
+				9C3840862C592BC500375828 /* Models */,
 				9C38407C2C592B5300375828 /* Assets.xcassets */,
 				9C38407E2C592B5300375828 /* Preview Content */,
 			);
@@ -65,6 +76,39 @@
 				9C38407F2C592B5300375828 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9C3840862C592BC500375828 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C38408A2C592CF100375828 /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9C3840872C592BCC00375828 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C38407A2C592B5200375828 /* ContentView.swift */,
+				9C3840902C592DA700375828 /* NoteDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9C3840882C592BD800375828 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9C38408E2C592D5A00375828 /* NotesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9C3840892C592C7200375828 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9C38408C2C592D1E00375828 /* NotesDataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C38407B2C592B5200375828 /* ContentView.swift in Sources */,
+				9C38408F2C592D5A00375828 /* NotesViewModel.swift in Sources */,
 				9C3840792C592B5200375828 /* NoteAppApp.swift in Sources */,
+				9C3840912C592DA700375828 /* NoteDetailView.swift in Sources */,
+				9C38408B2C592CF100375828 /* Note.swift in Sources */,
+				9C38408D2C592D1E00375828 /* NotesDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
